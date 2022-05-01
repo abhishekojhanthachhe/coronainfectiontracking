@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+/*Images were inported from this url:https://unsplash.com/*/
+/*Costom properties*/
+:root {
+    --line-hight:2em;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+/*BG of the first section*/
+.hero-bg {
+    background: white url('../images/bg.jpeg'); 
+    background-size: 100%;  
+    color:rgb(43, 105, 156);
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+header{
+    padding: 1em 0;
+}
+
+/*"Logo" on top*/
+.hero-bg a {
+    color: rgba(113, 63, 160, 0.795);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/*Nav Bar*/
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 1em;
+    padding: 0;
+  position: relative;
+}
+
+
+.hero-bg ul {
+    list-style-type: none;
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.5);
+  }
+  
+ .hero-bg li {
+    float: left;
+  }
+  
+ .hero-bg li a {
+    display: block;
+    color:rgb(47, 133, 190);
+    font-size: small;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  .hero-bg li a:hover {
+ background-color: rgba(129, 55, 172, 0.432);
+  }
+
+/*The top section*/
+section {
+    margin: 0 1em;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em; 
+}
+
+h1 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+
+}
+
+.hero-bg p {
+    font-weight: bold;
+    margin: 0 1em 3em;
+    color: #2e3138;
+}
+
+.form-container{
+    background-color:rgba(44, 92, 99, 0.63);
+    color: #000b20;
+    margin: 2em -1em 0;
+    padding: 2em;
+    width: 600px;
+}
+
+.msgg{
+    color: red;
+    font-weight: bolder;
+}
+
+
+.form-container p {
+    color: rgb(41, 38, 38);
+    margin-bottom: 1.5em;
+    margin-top: .5em ;
+    font-weight: normal;
+    font-size: .8em;
+
+}
+
+
+.description {
+    margin: 0;
+
+}
+.left-column {
+    text-align: center;
+    margin: 3em 1em; 
+}
+
+h2 {
+    text-transform:uppercase;
+    position: relative;
+}
+
+
+.dropbtn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 5px 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(80, 79, 79);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color:  white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: tomato;
+    border-radius: 10px;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: tomato;}
+
+
+/*Adjust for above 730px on the x-axis*/
+@media (min-width: 730px){
+
+    section{
+        margin: 0 4em;
+    }
+    .form-container {
+    margin: 2em -4em 0 ;
+}
+}
+
+/*Adjust for above 930px on the x-axis*/
+@media (min-width: 930px){
+    .hero-bg {
+       
+        text-align: left;
+        padding-bottom: 4em;
+    }
+
+    .hero-bg ul {
+        list-style-type: none;
+        width: 800px;
+        height: 50px;
+        margin-left: -1em ;
+        margin-top: 0.5em;
+        padding: 0;
+       
+      }
+   .hero-bg p {
+       margin: 0 0 2em;
+   }
+   .hero-bg section{
+       width: 75%;
+   }
+   .form-container {
+       margin: 4.5em 5em 0;
+       margin-left: -1em;
+       padding: 1em;
+       padding-right: -10em;
+       border-radius: 3em;
+       box-shadow: 10px 10px  10px rgba(0,0,0, .3);
+    }
+
+    .form-left{
+      
+        width: fit-content;
+        height:fit-content ;
+    }
+    
+    .hero-bg p{
+        margin-bottom: 0;
+        
+    }
+
+    section.description { 
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+
+    .left_column{
+        grid-area: content;
+        padding: 0 10%;
+    }
+}  

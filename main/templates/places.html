@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+
+{% block body%}
+
+<div class="my_container">
+    <div class="row">
+        {% for place in places %}
+            <div class="col-sm-3 my-3 ms-5 me-3">
+                <div class="card bg-light text-dark">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ place[1] }}</h5>
+                        <p><h5>Location:</h5> <i>{{ place[3] }}</i> </p>
+                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal{{place[0]}}">  
+                            Scan QR Code
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal{{place[0]}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">QR Code for {{ place[1] }}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="{{ qrcode(place[5]) }}" alt="">
+                            <h4>Scan Code</h4>
+                            <br />
+                            
+                            <h5>Can't Scan? Just Visit</h5>
+                            <a href="{{ place[5] }} " class="btn btn-primary">Go</a> 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+</div>
+
+
+{% endblock %}

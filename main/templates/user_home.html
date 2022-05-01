@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block body%}
+
+<div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+           <h3>Welcome {{username}}!</h3>
+        </div>
+        <div class="card-body">
+            <a href="{{ url_for('all_places') }}" class="btn btn-primary">Find place and visit</a>
+            <a href="{{ url_for('logout') }}" class="btn btn-dark">logout</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

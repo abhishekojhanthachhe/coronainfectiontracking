@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+:root {
+    --line-hight:2em;
+}
+body {
+    
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+/*BG of the first section*/
+.hero-bg {
+    background: white url('../images/bg.jpeg'); 
+    background-size: 100%;  
+    color:rgb(43, 105, 156);
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+header{
+    padding: 1em 0;
+}
+
+.form-container p {
+    color: rgb(41, 38, 38);
+    margin-bottom: 1.5em;
+    margin-top: .5em ;
+    font-weight: normal;
+    font-size: .8em;
+
+}
+
+
+/*"Logo" on top*/
+.hero-bg a {
+    color: rgba(113, 63, 160, 0.795);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+/*Nav Bar*/
+#nav {
+  position: fixed;
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 1em;
+    padding: 0;
+  position: relative;
+}
+
+
+.hero-bg ul {
+    list-style-type: none;
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.5);
+  }
+  
+ .hero-bg li {
+    float: left;
+  }
+  
+ .hero-bg li a {
+    display: block;
+    color:rgb(47, 133, 190);
+    font-size: small;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  .hero-bg li a:hover {
+ background-color: rgba(129, 55, 172, 0.432);
+  }
+/*The top section*/
+section {
+    margin: 0 1em;
+}
+
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 1em;
+    padding: 0;
+  position: relative;
+}
+.hero-bg ul {
+    list-style-type: none;
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.5);
+  }
+  
+ .hero-bg li {
+    float: left;
+  }
+  
+ .hero-bg li a {
+    display: block;
+    color:rgb(47, 133, 190);
+    font-size: small;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  .hero-bg li a:hover {
+ background-color: rgba(129, 55, 172, 0.432);
+  }
+*{
+    
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+

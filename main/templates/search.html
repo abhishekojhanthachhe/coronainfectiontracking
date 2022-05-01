@@ -1,0 +1,51 @@
+{% extends 'index.html' %}
+
+{% block body%}
+
+{% if users %}
+<div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+           <h3>Users that entered {{ place[1] }} between {{ dfrom }} and {{ dto }}: </h3>
+        </div>
+    </div>
+
+    <table class="table table-striped table-light">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone number</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody id="users_table_body">
+            {% for user in users %}
+                <tr>
+                    <th scope="row"></th>
+                    <td>{{ user[0] }}</td>
+                    <td>{{ user[1] }}</td>
+                    <td>{{ user[2] }}</td>
+                    <td>{{ user[3] }}</td>
+                    <td>
+                        {% if user[4]==1 %}
+                        <input type="button" class="btn btn-danger" value="Infected" disabled/>
+                        {% else %}
+                        <input type="button" class="btn btn-success" value="Not infected" disabled/>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <div class="container">
+        <h3><b>No Users visited {{ place[1] }} between {{ dfrom }} and {{ dto }}.</b></h3>
+    </div>
+{% endif%}
+    <a class="btn btn-dark btn-large" href="/agent">Back</a>
+</div>
+
+{% endblock %}
