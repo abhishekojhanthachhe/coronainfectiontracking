@@ -66,6 +66,25 @@ Once all the packages are installed, run the following command in the same comma
     export FLASK_APP=run.py
     flask run
 
+You can also log in as an agent using the following credentials.
+
+Username: **a1**
+
+Password: **pw**
+
+Some other credentials you can use.
+### Hospital login
+
+Username: **h1**
+
+Password: **pw**
+
+### User login
+
+Username: **a b**
+
+Password: **pw**
+
 ## <a name="as">Applicaiton status</a>
 * Created the frontend (GUI Pages) for all different pages for login, registration and verification using HTML, CSS and Javascript.
 * Created the database using SQLite.
@@ -84,6 +103,6 @@ Once all the packages are installed, run the following command in the same comma
 * Hospitals can mark users as infected
 
 ## <a name="r">References</a>
-Testing
+
 - https://www.youtube.com/watch?v=iQVvpnRYl-w&t=261s&ab_channel=MVPEngineer
 - https://www.youtube.com/watch?v=6tNS--WetLI&t=464s&ab_channel=CoreySchafer
