@@ -7,11 +7,7 @@ Corona Archive is an application which aims to track Corona Infections via conta
 2. [Features](#f)
 3. [Built with](#bw)
 4. [Getting started](#gs)
-5. [Implementation](#i)
-6. [File Structure](#fs)
-7. [Application status](#as)
-8. [Future updates](#fu)
-9. [References](#r)
+5. [References](#r)
 
 ## <a name="a">Authors</a>
     * Abhishek Ojha
